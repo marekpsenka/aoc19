@@ -1,0 +1,60 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "day01a - Test",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/day01a.exe",
+            "args": ["<", "${workspaceFolder}/.inputs/day01-test.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "day01a",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/day01a.exe",
+            "args": ["<", "${workspaceFolder}/.inputs/day01.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "day01b - Test",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/day01b.exe",
+            "args": ["<", "${workspaceFolder}/.inputs/day01-test.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "day01b",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/day01b.exe",
+            "args": ["<", "${workspaceFolder}/.inputs/day01.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}

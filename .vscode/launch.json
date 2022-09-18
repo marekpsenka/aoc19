@@ -55,6 +55,58 @@
             "console": "internalConsole",
             "preLaunchTask": "build",
             "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "day02a - Test",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/day02a.exe",
+            "args": ["<", "${workspaceFolder}/.inputs/day02-test.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "day02a",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/day02a.exe",
+            "args": ["<", "${workspaceFolder}/.inputs/day02.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "day02b - Test",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/day02b.exe",
+            "args": ["<", "${workspaceFolder}/.inputs/day02-test.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "day02b",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/day02b.exe",
+            "args": ["<", "${workspaceFolder}/.inputs/day02.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }

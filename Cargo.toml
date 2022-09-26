@@ -18,3 +18,9 @@ name = "day02a"
 
 [[bin]]
 name = "day02b"
+
+[[bin]]
+name = "day03a"
+
+[[bin]]
+name = "day03b"

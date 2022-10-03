@@ -159,6 +159,32 @@
             "console": "internalConsole",
             "preLaunchTask": "build",
             "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "day04a",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/day04a.exe",
+            "args": ["<", "${workspaceFolder}/.inputs/day04.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "day04b",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/day04b.exe",
+            "args": ["<", "${workspaceFolder}/.inputs/day04.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }

@@ -6,27 +6,3 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-
-[[bin]]
-name = "day01a"
-
-[[bin]]
-name = "day01b"
-
-[[bin]]
-name = "day02a"
-
-[[bin]]
-name = "day02b"
-
-[[bin]]
-name = "day03a"
-
-[[bin]]
-name = "day03b"
-
-[[bin]]
-name = "day04a"
-
-[[bin]]
-name = "day04b"

@@ -156,6 +156,13 @@ pub mod intcode {
         return str.trim().split(',').map(|x| x.parse::<i32>()).collect();
     }
 
+    #[derive(PartialEq, Eq)]
+    pub enum HaltReason
+    {
+        Terminate,
+        Input
+    }
+
     #[derive(Debug)]
     pub struct ExecError;
 
@@ -361,8 +368,28 @@ pub mod intcode {
                 })
         }
 
+        pub fn run_adv(&mut self) -> Result<HaltReason, ExecError> {
+            Operation::from_integer(self.memory[self.ptr])
+                .map_err(|_| ExecError {})
+                .and_then(|op| match op {
+                    Operation::Terminate => Ok(HaltReason::Terminate),
+                    Operation::Input if self.input.is_empty() => Ok(HaltReason::Input),
+                    _ => self.exec_op(op).and_then(|_| self.run_adv()),
+                })
+        }
+
+        pub fn push_input(&mut self, i: i32)
+        {
+            self.input.push_back(i)
+        }
+
         pub fn output(&self) -> &[i32] {
             &self.output
+        }
+
+        pub fn pop_output(&mut self) -> Option<i32>
+        {
+            self.output.pop()
         }
     }
 }
